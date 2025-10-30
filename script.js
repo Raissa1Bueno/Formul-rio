@@ -39,7 +39,7 @@ function checkForm() {
   } else {
     successInput(password);
   }
-  / Confirmação de senha
+/ Confirmação de senha
   if (passwordConfirmationValue === "") {
     errorInput(passwordConfirmation, "Confirme sua senha!");
   } else if (passwordConfirmationValue !== passwordValue) {
@@ -78,6 +78,6 @@ function successInput(input) {
 
 // Função para validar o email
 function checkEmail(email) {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const re = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
   return re.test(email);
 }
